@@ -3,7 +3,7 @@
 UIAPduino (CH32V003) 用の OpenLog 互換 UART データロガーです。  
 UART RX で受信したデータを microSD カードに記録します。
 
-このスケッチは、UIAPduino をベースにした専用ロギングボード **UIAP LOG** 向けに開発されました。
+このスケッチは **UIAP LOG** 基板で開発しましたが、UIAPduino と市販の microSD カードアダプタがあれば使えます。
 
 | 表面 | 裏面 |
 |------|------|
@@ -93,7 +93,7 @@ MIT
 OpenLog-compatible UART data logger for UIAPduino (CH32V003).  
 Receives data on UART RX and writes it to a microSD card.
 
-This sketch was developed for the **UIAP LOG** board, a dedicated logging board based on UIAPduino.
+This sketch was developed with the **UIAP LOG** board, but it works with any UIAPduino and a standard microSD card adapter.
 
 ### Requirements
 
