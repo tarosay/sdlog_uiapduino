@@ -38,6 +38,10 @@ UART RX で受信したデータを microSD カードに記録します。
 
 ## 配線
 
+> ⚠️ **重要**: microSD カードは 3.3V 動作です。使用前に UIAPduino の電源を 5V から 3.3V にパターンカットで切り替えてください。5V のまま接続すると SD カードが破損します。
+
+![3.3V パターンカット](3v3JP.jpg)
+
 | UIAPduino | microSD アダプタ |
 |-----------|----------------|
 | A2 (PC4, pin 6) | CS (DAT3) |
@@ -113,6 +117,10 @@ This sketch is optimized for the **UIAPduino HID** board package, which produces
 | FQBN | `UIAP_HID:ch32v:CH32V003:usb=nousb,opt=oslto` |
 
 ### Wiring
+
+> ⚠️ **Important**: The microSD card operates at 3.3V. Cut the power pattern on UIAPduino to switch from 5V to 3.3V before use. Connecting at 5V may damage the SD card.
+
+![3.3V pattern cut](3v3JP.jpg)
 
 | UIAPduino | microSD adapter |
 |-----------|----------------|
